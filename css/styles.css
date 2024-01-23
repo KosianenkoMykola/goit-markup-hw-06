@@ -35,14 +35,18 @@ img {
 
 .head-border {
   border-bottom: 1px solid #e7e9fc;
-  height: 72px;
-  display: flex;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
+  /* display: flex; */
+  /* height: 72px; */
+  width: 100%;
+  height: 56px;
   display: flex;
+  align-items: center;
+  padding: 16px 17.5px;
 }
 
 .container {
@@ -55,8 +59,6 @@ img {
 }
 
 .navigation {
-  display: flex;
-  align-items: center;
 }
 
 .logo {
@@ -67,7 +69,6 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  margin-right: 76px;
 }
 
 .black-logo {
@@ -111,18 +112,26 @@ img {
 }
 
 .nav-menu {
-  display: flex;
-  gap: 40px;
+  /* display: flex; */
+  /* gap: 40px; */
+  opacity: 0;
+  visibility: hidden;
+  position: none;
 }
 
 .nav-address {
   font-style: normal;
+  opacity: 0;
+  visibility: hidden;
+  position: none;
+  top: 0;
+  left: 0;
 }
 
 .address-container {
   display: flex;
-  gap: 40px;
-  margin-left: 332px;
+  /* gap: 40px; */
+  /* margin-left: 332px; */
 }
 
 .contact-text {
@@ -151,20 +160,23 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 188px 0;
-  max-width: 1440px;
+  padding: 72px 0;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .hero-text {
   color: #fff;
-  font-size: 56px;
+  /* font-size: 56px; */
+  font-size: 36px;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.07;
+  /* line-height: 1.07; */
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  margin: 0 auto;
-  margin-bottom: 48px;
-  max-width: 496px;
+  margin-bottom: 72px;
+  /* max-width: 496px; */
+  max-width: 288px;
   text-align: center;
 }
 
@@ -271,10 +283,11 @@ img {
 .team-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 72px;
 }
 
-.our-team img{
+.our-team img {
   width: 100%;
 }
 
@@ -429,18 +442,24 @@ img {
 
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  /* align-items: baseline; */
   margin: 0 auto;
-  padding: 0 160px;
+  /* padding: 0 160px; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .footer-logo-text {
-  margin-right: 120px;
+  /* margin-right: 120px; */
+  text-align: center;
 }
 
 .footer {
   background-color: #2e2f42;
-  padding: 100px 0;
+  /* padding: 100px 0; */
+  padding: 96px 0;
 }
 
 .footer-title {
@@ -449,7 +468,8 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  margin-bottom: 16px;
+  margin-top: 72px;
+  text-align: center;
 }
 
 .logo-footer {
@@ -461,7 +481,8 @@ img {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   display: inline-block;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
+  margin-bottom: 17.5px;
 }
 
 .white-logo {
@@ -478,12 +499,15 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  min-width: 264px;
+  /* min-width: 264px; */
+  min-width: 288px;
+  text-align: left;
 }
 
 .footer-icons-item {
   display: flex;
   gap: 16px;
+  margin-top: 16px;
 }
 
 .footer-icons-list {
@@ -751,9 +775,11 @@ img {
 
 .subscribe-form {
   display: flex;
+  flex-direction: column;
+  margin-top: 16px;
 }
 .subscribe-form-wrap {
-  margin-left: 80px;
+  /* margin-left: 80px; */
 }
 .form-title-subscribe {
   color: #fff;
@@ -761,11 +787,14 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px; */
+  margin-top: 72px;
+  text-align: center;
 }
 
 .subscribe-input {
-  width: 264px;
+  /* width: 264px; */
+  width: 288px;
   height: 40px;
   border-radius: 4px;
   background-color: transparent;
@@ -774,9 +803,11 @@ img {
   line-height: 2;
   letter-spacing: 0.04em;
   outline: transparent;
+  opacity: 0.3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding-left: 16px;
   color: #ffffff;
+  
 }
 
 .subscribe-input::placeholder {
@@ -799,8 +830,10 @@ img {
   background-color: #4d5ae5;
   border-radius: 4px;
   border: none;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 auto;
+  margin-top: 16px;
 }
 
 .subscribe-btn:hover,
