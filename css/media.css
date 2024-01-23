@@ -12,7 +12,7 @@
     justify-content: center;
   }
   .feature-item {
-    width: calc((100% - 72px) / 2);
+    width: calc((100% - 24px) / 2);
   }
   .feature-title {
     text-align: left;
@@ -23,7 +23,7 @@
     column-gap: 24px;
   }
   .team-card {
-    width: calc((100% - 64px) / 2);
+    width: calc((100% - 24px) / 2);
   }
   .our-team > .container {
     max-width: 582px;
@@ -35,7 +35,7 @@
     justify-content: center;
   }
   .portfolio-item {
-    width: calc((100% - 72px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 
   /*------------HERO------------*/
@@ -52,7 +52,8 @@
     align-items: baseline;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 768px;
+    justify-content: flex-start;
+    max-width: 496px;
   }
   .footer-logo-text {
     text-align: left;
@@ -72,7 +73,7 @@
     margin: 0;
   }
 }
-@media (min-resolution: 192dpi) and (min-width: 768px) {
+@media (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -141,9 +142,22 @@
   .hero-text {
     margin-bottom: 48px;
   }
+  /*------------FOOTER------------*/
+  .footer-container {
+    max-width: 1158px;
+  }
+  .footer-logo-text {
+    margin-right: 120px;
+  }
+  .subscribe-form-wrap {
+    margin-left: 80px;
+  }
+  .subscribe-input {
+    opacity: 1;
+  }
 }
 
-@media (min-resolution: 192dpi) and (min-width: 1158px) {
+@media (min-resolution: 200dpi) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
