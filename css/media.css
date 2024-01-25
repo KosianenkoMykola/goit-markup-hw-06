@@ -5,6 +5,9 @@
   .menu-open-btn {
     display: none;
   }
+  .header-container {
+    margin: 0 auto;
+  }
   .nav-menu {
     display: flex;
   }
