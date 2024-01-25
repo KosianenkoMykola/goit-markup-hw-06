@@ -157,6 +157,94 @@ img {
   justify-content: center;
 }
 
+.mob-menu {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.close-menu-btn {
+  margin-left: auto;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  color: #2e2f42;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mob-menu-item {
+  margin-top: 72px;
+}
+.mob-menu-list {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.03em;
+  color: #2e2f42;
+}
+.mob-menu-item > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.mob-menu-item > li:first-child > .mob-menu-list {
+  color: #404bbf;
+}
+.mob-menu-address {
+  margin-top: 150px;
+}
+.mob-address-list {
+  margin-bottom: 20px;
+}
+.mob-address-item{
+}
+.mob-address-item >li:first-child > .mob-contact-text {
+  color: #4D5AE5;
+}
+.mob-contact-text {
+  font-size: 20px;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.mob-menu-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.mob-icon-list {
+  width: 40px;
+  height: 40px;
+}
+.mob-icon-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mob-icon-color {
+}
 /*------------HERO------------*/
 
 .hero {
@@ -182,7 +270,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/background-mob-2x.jpg)
+      url(../images/background-mob-2x.jpg);
   }
 }
 
@@ -828,7 +916,6 @@ img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding-left: 16px;
   color: #ffffff;
-  
 }
 
 .subscribe-input::placeholder {
