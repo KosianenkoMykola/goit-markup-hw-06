@@ -141,10 +141,7 @@ img {
 
 .menu-open-btn {
   margin-left: auto;
-  position: absolute;
-  top: 16px;
-  bottom: 16px;
-  right: 16px;
+  position: static;
   width: 24px;
   height: 24px;
   border: none;
